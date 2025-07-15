@@ -11,7 +11,7 @@ def instructions():
           you can either choose to calculate another shape or finish and see all your results
           displayed in a table.
 
-          Make sure to only enter numbers when asked for measurements and enjoy calculating.
+          Make sure to only enter numbers when asked for measurements and enjoy calculating.")
 
 def string_check(question, valid_answers=('yes', 'no'), num_letters=1):
     """Checks that users enter the full word or the 'n' letter/s
