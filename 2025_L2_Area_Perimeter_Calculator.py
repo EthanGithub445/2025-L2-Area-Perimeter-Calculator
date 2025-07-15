@@ -2,14 +2,16 @@ import math
 import pandas
 
 # Functions go here
+
+
 def instructions():
     make_statement("Instructions", "ℹ️")
-    print("This program helps you calculate the area and perimeter (or circumference)"
-          " of different shapes. Pick a number from 1-4 to pick a shape and enter the measurements"
-          " asked for such as side length, radius, base, height, etc. The program will then calculate"
-          " and show the area and perimeter (or circumference). You can either choose to calculate"
-          " another shape or finish and see all your results displayed in a table."
-          " Make sure to only enter numbers when asked for measurements and enjoy calculating.")
+    print("This program helps you calculate the area and perimeter (or circumference)")
+    print(" of different shapes. Pick a number from 1-4 to pick a shape and enter the measurements")
+    print(" asked for such as side length, radius, base, height, etc. The program will then calculate")
+    print(" and show the area and perimeter (or circumference). You can either choose to calculate")
+    print(" another shape or finish and see all your results displayed in a table.")
+    print(" Make sure to only enter numbers when asked for measurements and enjoy calculating.")
 
 
 def string_check(question, valid_answers=('yes', 'no'), num_letters=1):
@@ -38,6 +40,8 @@ def make_statement(statement, decoration):
     print(f"{decoration * 3} {statement} {decoration * 3}")
 
 # Calculate area and perimeter for a square
+
+
 def calculate_square():
     side = float(input("Enter the side length of the square: "))
     area = side * side
@@ -74,6 +78,8 @@ def calculate_triangle():
     return ["Triangle", f"a = {a}, b = {b}, c = {c}, height = {height}", round(area, 2), round(perimeter, 2)]
 
 # Main routine
+
+
 make_statement("Area Perimeter Calculator", "✨")
 print()
 want_instructions = string_check("Do you want to read the instructions? ")
@@ -116,6 +122,3 @@ if results:
     data = pandas.DataFrame(results, columns=["Shape", "Dimensions", "Area", "Perimeter"])
     print("Area and Perimeter Calculations:")
     print(data)
-
-
-
