@@ -4,6 +4,14 @@ import pandas
 # Functions go here
 def instructions():
     make_statement("Instructions", "ℹ️")
+    print("This program helps you calculate the area and perimeter (or cirumference)
+          of different shapes. Pick a number from 1-4 to pick a shape and enter the
+          measurements asked for such as side length, radius, base, height, ect)
+          the program will then calculate and show the area and perimeter (or circumference)
+          you can either choose to calculate another shape or finish and see all your results
+          displayed in a table.
+
+          Make sure to only enter numbers when asked for measurements and enjoy calculating.
 
 def string_check(question, valid_answers=('yes', 'no'), num_letters=1):
     """Checks that users enter the full word or the 'n' letter/s
