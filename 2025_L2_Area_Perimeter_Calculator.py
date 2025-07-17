@@ -9,7 +9,7 @@ def instructions():
     print("This program helps you calculate the area and perimeter (or circumference)")
     print(" of different shapes. Pick a number from 1-4 to pick a shape and enter the measurements")
     print(" asked for such as side length, radius, base, height, etc. The program will then calculate")
-    print(" and show the area and perimeter (or circumference). You can either choose to calculate")
+    print(" and show the Results. You can either choose to calculate")
     print(" another shape or finish and see all your results displayed in a table.")
     print(" Make sure to only enter numbers when asked for measurements and enjoy calculating.")
 
@@ -120,5 +120,5 @@ while True:
 # Display all the calculations in a table using pandas
 if results:
     data = pandas.DataFrame(results, columns=["Shape", "Dimensions", "Area", "Perimeter"])
-    print("Area and Perimeter Calculations:")
+    make_statement("Area and Perimeter Calculations:", "✨")
     print(data)
