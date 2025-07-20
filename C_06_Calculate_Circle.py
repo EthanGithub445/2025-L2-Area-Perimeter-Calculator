@@ -1,7 +1,7 @@
 import math
 # Function to calculate for circle
 def calculate_circle():
-    radius = int(input("radius: "))
+    radius = float(input("Radius: "))
     # Area using pi x radius squared
     area = math.pi * radius ** 2
     # Perimeter using 2 x pi x radius
