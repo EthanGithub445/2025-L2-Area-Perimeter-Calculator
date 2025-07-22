@@ -2,15 +2,17 @@ import math
 import pandas
 
 # Functions go here
+
+
 def num_check(question, num_type, exit_code=None):
     """Checks that the user enters an integer / float that is more than
     zero (or the optional exit code)"""
 
     if num_type == "integer":
-        error = "oops - please enter an integer more than zero"
+        error = "please enter an integer more than zero"
         change_to = int
     else:
-        error = "oops - please enter an integer more than zero"
+        error = "please enter an integer more than zero"
         change_to = float
 
     while True:
@@ -31,6 +33,7 @@ def num_check(question, num_type, exit_code=None):
 
         except ValueError:
             print(error)
+
 
 def instructions():
     make_statement("Instructions", "ℹ️")
@@ -108,7 +111,7 @@ def calculate_triangle():
 
 # Main routine
 
-
+# display main heading and ask for instructions
 make_statement("Area Perimeter Calculator", "✨")
 print()
 want_instructions = string_check("Do you want to read the instructions? ")
